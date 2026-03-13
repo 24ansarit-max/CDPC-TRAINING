@@ -1,0 +1,73 @@
+PYTHON BASIC PROGRAMS (HACKERRANK)
+----------------------------------
+
+
+----------------------------------
+Q1. Print "Hello, World!" in Python
+----------------------------------
+This program prints a simple message on the screen.
+
+print("Hello, World!")
+
+
+
+----------------------------------
+Q2. Python If–Else Condition
+----------------------------------
+This program checks the value of n and prints "Weird" or "Not Weird"
+based on the given conditions.
+
+n = int(input())
+
+if n % 2 != 0:
+    print("Weird")
+
+elif 2 <= n <= 5:
+    print("Not Weird")
+
+elif 6 <= n <= 20:
+    print("Weird")
+
+else:
+    print("Not Weird")
+
+
+
+----------------------------------
+Q3. Arithmetic Operators
+----------------------------------
+This program performs basic arithmetic operations
+such as addition, subtraction, and multiplication.
+
+a = int(input())
+b = int(input())
+
+print(a + b)   # Addition
+print(a - b)   # Subtraction
+print(a * b)   # Multiplication
+
+
+
+----------------------------------
+Q4. Python Division
+----------------------------------
+This program demonstrates integer division and
+floating-point division.
+
+a = int(input())
+b = int(input())
+
+print(a // b)   # Integer division
+print(a / b)    # Floating-point division
+
+
+
+----------------------------------
+Q5. Loop Program
+----------------------------------
+This program prints the square of numbers from 0 to n-1.
+
+n = int(input())
+
+for i in range(n):
+    print(i ** 2)
