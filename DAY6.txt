@@ -1,0 +1,158 @@
+PYTHON HACKERRANK PROBLEMS
+--------------------------
+
+
+------------------------------------------------
+1. Compare the Triplets
+------------------------------------------------
+
+Link:
+https://www.hackerrank.com/challenges/compare-the-triplets/problem
+
+This program compares scores of two players.
+
+def compare(a, b):
+    scoreA = 0
+    scoreB = 0
+
+    for i in range(3):
+        if a[i] > b[i]:
+            scoreA += 1
+        elif a[i] < b[i]:
+            scoreB += 1
+
+    return scoreA, scoreB
+
+
+Example
+
+Input
+5 6 7
+3 6 10
+
+Output
+1 1
+
+
+------------------------------------------------
+2. A Very Big Sum
+------------------------------------------------
+
+Link:
+https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+This program finds the sum of large numbers.
+
+def bigSum(ar):
+    total = 0
+    for num in ar:
+        total += num
+    return total
+
+
+Example
+
+Input
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output
+5000000015
+
+
+------------------------------------------------
+3. Diagonal Difference
+------------------------------------------------
+
+Link:
+https://www.hackerrank.com/challenges/diagonal-difference/problem
+
+This program calculates the difference between two diagonals of a matrix.
+
+def diagonalDifference(arr):
+    n = len(arr)
+    d1 = 0
+    d2 = 0
+
+    for i in range(n):
+        d1 += arr[i][i]
+        d2 += arr[i][n - i - 1]
+
+    return abs(d1 - d2)
+
+
+Example
+
+Input
+3
+11 2 4
+4 5 6
+10 8 -12
+
+Output
+15
+
+
+------------------------------------------------
+4. Plus Minus
+------------------------------------------------
+
+Link:
+https://www.hackerrank.com/challenges/plus-minus/problem
+
+This program finds the ratio of positive, negative, and zero values.
+
+def plusMinus(arr):
+    n = len(arr)
+
+    pos = neg = zero = 0
+
+    for i in arr:
+        if i > 0:
+            pos += 1
+        elif i < 0:
+            neg += 1
+        else:
+            zero += 1
+
+    print(f"{pos/n:.6f}")
+    print(f"{neg/n:.6f}")
+    print(f"{zero/n:.6f}")
+
+
+Example
+
+Input
+6
+-4 3 -9 0 4 1
+
+Output
+0.500000
+0.333333
+0.166667
+
+
+------------------------------------------------
+5. Rotate Array
+------------------------------------------------
+
+This program rotates a list by given positions.
+
+ar = eval(input("Enter list: "))
+n = int(input("Enter rotation: "))
+
+length = len(ar)
+
+rotated = ar[length - n:] + ar[:length - n]
+
+print(rotated)
+
+
+Example
+
+Input
+[2, 4, 5, 6, 2]
+3
+
+Output
+[5, 6, 2, 2, 4]
